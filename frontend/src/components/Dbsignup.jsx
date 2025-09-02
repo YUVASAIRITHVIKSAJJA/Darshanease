@@ -40,7 +40,7 @@ export default function Dbsignup() {
         alert('Please fill all the fields');
         return;
       }
-      const response = await axios.post('http://localhost:5500/templereps', newtrep);
+      const response = await axios.post('https://darshanease-9pfc.vercel.app/templereps', newtrep);
       navigate('/db-login');
     } catch (error) {
       console.error(error);

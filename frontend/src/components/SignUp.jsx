@@ -34,7 +34,7 @@ export default function Signup() {
         alert('Please fill all the fields');
         return;
       }
-      await axios.post('http://localhost:5500/admins', newadmin);
+      await axios.post('https://darshanease-9pfc.vercel.app/admins', newadmin);
       navigate('/login');
     } catch (error) {
       console.error(error);

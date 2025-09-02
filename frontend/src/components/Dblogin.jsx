@@ -19,7 +19,7 @@ export default function Dblogin() {
 
   const fetchAvailableTemples = async () => {
     try {
-      const response = await axios.get('http://localhost:5500/availableTemples');
+      const response = await axios.get('https://darshanease-9pfc.vercel.app/availableTemples');
       setAvailableTemples(response.data);
     } catch (error) {
       console.error('Error fetching available temples:', error);
@@ -29,7 +29,7 @@ export default function Dblogin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5500/templelogin', { email, password, templeName });
+      const response = await axios.post('https://darshanease-9pfc.vercel.app/templelogin', { email, password, templeName });
       alert(response.data.message);
       if (response.data.user) {
         localStorage.setItem('templeRepName', response.data.user.name);

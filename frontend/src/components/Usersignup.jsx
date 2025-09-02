@@ -34,7 +34,7 @@ export default function Usersignup() {
         alert('Please fill all the fields');
         return;
       }
-      await axios.post('http://localhost:5500/users', newuser);
+      await axios.post('https://darshanease-9pfc.vercel.app/users', newuser);
       navigate('/user-login');
     } catch (error) {
       console.error(error);

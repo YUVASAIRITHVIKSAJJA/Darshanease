@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { jsPDF } from "jspdf";
 
-const API_URL = 'http://localhost:5500';
+const API_URL = 'https://darshanease-9pfc.vercel.app/';
 const DEFAULT_USERNAME = 'Sashi';
 
 export default function Userdash() {

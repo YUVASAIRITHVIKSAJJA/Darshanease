@@ -13,7 +13,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5500/admin/login', { email, password });
+      const response = await axios.post('https://darshanease-9pfc.vercel.app/admin/login', { email, password });
       if (response.data.message === 'Login successful') {
         localStorage.setItem('adminName', response.data.admin.name);
         localStorage.setItem('adminId', response.data.admin.id);
